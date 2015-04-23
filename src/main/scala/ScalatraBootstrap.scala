@@ -12,6 +12,6 @@ class ScalatraBootstrap extends LifeCycle {
     val rateAggregatorActor = system.actorOf(Props[RateAggregatorActor], name="rateAggregator")
 
     context.mount(new MyScalatraServlet, "/*")
-    context.mount(new GeeconController(system, rateAggregatorActor), "/*")
+    context.mount(new GeeconController(rateAggregatorActor), "/*")
   }
 }

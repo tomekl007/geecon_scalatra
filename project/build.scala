@@ -29,6 +29,7 @@ object GeeconappBuild extends Build {
         "org.scalatra" %% "scalatra-scalatest" % ScalatraVersion % "test",
         "org.json4s"   %% "json4s-jackson" % "3.2.9",
         "com.typesafe.akka" %% "akka-actor" % "2.3.9",
+        "com.typesafe.akka" %% "akka-testkit" % "2.3.9",
         "org.scalatra" %% "scalatra-specs2" % ScalatraVersion % "test",
         "ch.qos.logback" % "logback-classic" % "1.1.2" % "runtime",
         "org.eclipse.jetty" % "jetty-webapp" % "9.1.5.v20140505" % "container",
